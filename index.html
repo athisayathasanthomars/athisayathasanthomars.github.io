@@ -3,10 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/home.css">
+    <title>Portfolio-Thomas</title>
 </head>
 <body>
-    <p>Hello, I'am Thomas Thuvarangan</p>
-    <p>An Software Engineer</p>
+    <div class="container">
+        <input type="checkbox" name="" id="check">
+        <div class="sidebar" id="sidebar">
+            <label for="check">
+                <span class="span fas fa-times" id="times" onclick="closeNav()"></span>
+                <span class="span fas fa-bars" id="bars" onclick="openNav()"></span>
+            </label>
+            <div class="logo">
+                <a href="">Thomas</a>
+            </div>
+            <div class="navsites">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i> </i> Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#experience"><i class="fa fa-briefcase"></i> Experience</a></li>
+                <li><a href="#education"><i class="fa fa-graduation-cap"></i>Education</a></li>
+                <li><a href="#projects"><i class="fa fa-list"></i>Projects</a></li>
+                <li><a href="#accolades"><i class="fa fa-award"></i>Accolades</a></li>
+            </div>
+        </div>
+        <h2 class="name" id="name"><span id="fname">Thomas</span><span id="lname">Thuvarangan</span></h2>
+        <div class="mainsite">
+            <section class="home" id="home">
+                <div class="row">
+                    <div class="column thomas">
+                        <p class="iam">Hello, I'm a</p>
+                        <div class="words">
+                            <span class="myrole">Virtuoso</span>
+                            <span class="myrole">ICT Tutor</span>
+                            <span class="myrole">Software Engineer</span>
+                            <span class="myrole">Web Developer</span>
+                            <span class="myrole">Singer</span>
+                        </div>
+                        <br><br>
+                        <p class="profilecontent">An undergraduate Specialized in Information Technology and Software Engineering from University of Sri Jayewardenepura and London Metropolitan University who is experienced in the higher education.</p>
+                        <br>
+                        <a target="_blank" href="CV-A.T.THUVARANGAN.pdf" class="btn ">Download CV</a>
+                        <div class="social-media">
+                            <a target="_blank" href="https://www.linkedin.com/in/athisayathasan-thomars-2001-12-12-tt/" class="social-link linkedin"><i class="fab fa-linkedin"></i></a>
+                            <a target="_blank" href="https://github.com/athisayathasanthomars" class="social-link github"><i class="fab fa-github"></i></a>
+                            <a target="_blank" href="https://web.facebook.com/athisayathasan.thomas/?_rdc=2&_rdr" class="social-link facebook"><i class="fab fa-facebook"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/thom_thuvaa/" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                            <!-- Add more social media links and icons as needed -->
+                        </div>
+                    </div>
+                    <div class=" column">
+                        <img src="images/myimage.jpeg" class="thomas" alt="my image">
+                    </div>
+                </div>
+                
+            </section>
+            
+        </div>
+        
+    </div>
+    <script src="JS/home.js"></script>
 </body>
 </html>
