@@ -30,12 +30,12 @@ header{
     color:#D9080C;
 }
 .nav-link:hover {
-    color: #151592 !important;
+    color: #D9080C !important;
 }
 
 .nav-link.active {
     font-weight:bold;
-    color: rgb(0, 0, 0) !important;
+    color: #D9080C !important;
 }
   
 p {
@@ -171,6 +171,111 @@ p {
 .info-grid p {
     margin-top: 25px;
 }
+
+.background{
+    background-color: #151592;
+}
+.background h2{
+    color: #D9080C;
+    text-align: center;
+}
+.background h3{
+    color: #ffffff;
+    font-size :19px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.education-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.education-timeline img {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.background .eduline{
+    width: 5px;
+    height: 400px;
+    padding-top: 10px;
+    position: absolute;
+}
+
+.education-timeline img:nth-child(1) {
+    max-width: 500px;
+    margin-left: 106px;
+}
+.education-timeline img:nth-child(2) {
+    max-width: 506px;
+    margin-left: -30px;
+    margin-top: 13px;
+    
+}
+.education-timeline img:nth-child(3) {
+    max-width: 460px;
+    margin-left: 50px;    
+    margin-top: 13px;
+}
+.education-timeline img:nth-child(4) {
+    max-width: 451px;
+    margin-left: 28px;    
+    margin-top: 13px;
+}
+
+.education-timeline img:nth-child(5) {
+    max-width: 444px;
+    margin-left: 5px;    
+    margin-top: 13px;
+}
+.education-timeline img:nth-child(6) {
+    max-width: 592px;
+    margin-left: 5px;    
+    margin-top: 13px;
+}
+
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.experience-timeline img {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.background .expline{
+    width: 5px;
+    height: 180px;
+    padding-top: 10px;
+    position: absolute;
+}
+
+.experience-timeline img:nth-child(1) {
+    max-width: 460px;
+    margin-left: 52px;
+}
+.experience-timeline img:nth-child(2) {
+    max-width: 440px;
+    margin-left: 66px;
+    margin-top: 13px;
+    
+}
+.experience-timeline img:nth-child(3) {
+    max-width: 475px;
+    margin-left: 124px;    
+    margin-top: 13px;
+}
+
 
 
 
