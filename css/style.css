@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body{
+    font-family: "Roboto",sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+header{
+    padding-top: 70px;
+    background: linear-gradient(100deg,#151592, #D9080C);
+}
+.navbar-brand,
+.text-primary {
+    font-family: "Bonheur Royale", serif;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #ffffff !important;
+}
+.nav-link{ 
+    color: white !important;
+    font-weight: normal;
+}
+.btn-primary {
+    background-color: #D9080C !important;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #151592 !important;    
+    color:#D9080C;
+}
+.nav-link:hover {
+    color: #151592 !important;
+}
+
+.nav-link.active {
+    font-weight:bold;
+    color: rgb(0, 0, 0) !important;
+}
+  
+p {
+    font-size: 21px;
+    color: #ffffff;
+}
+.iam{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: left;
+}
+.myrole{
+    font-family: "Inter", serif;
+    font-size: 3rem;
+    font-weight:bold;
+    color: #151592;
+    
+}
+.role2{
+    font-family: "Inter", serif;
+    font-size: 3rem;
+    font-weight:bold;
+    color: #fffbfb;
+}
+.profilecontent{
+    text-align: left;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+.home .container {
+    margin-top: -95px;
+}
+
+
+@media (max-width: 768px) {
+    .home .container {
+        margin-top: 100px; 
+    }
+}
+
+
+.words {
+    width: 440px;
+    height: 61px;
+    background-color: #D9080C;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.words .myrole .highlight {
+    color: white;
+}
+.words .myrole {
+    position: absolute;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: spin_words 12s infinite;
+}
+
+
+.words .myrole:nth-child(1) { animation-delay: 0s; }
+.words .myrole:nth-child(2) { animation-delay: 2s; }
+.words .myrole:nth-child(3) { animation-delay: 4s; }
+.words .myrole:nth-child(4) { animation-delay: 6s; }
+.words .myrole:nth-child(5) { animation-delay: 8s; }
+.words .myrole:nth-child(6) { animation-delay: 10s; } 
+.words .myrole:nth-child(7) { animation-delay: 12s; } 
+
+@keyframes spin_words {
+    0% { opacity: 0; transform: translateY(100%); }
+    10% { opacity: 1; transform: translateY(0); }
+    25% { opacity: 1; }
+    35% { opacity: 0; transform: translateY(-100%); }
+    100% { opacity: 0; }
+}
+
+.aboutme {
+    background-color: #151592;
+    padding: 60px 0;
+}
+
+.aboutme .name {
+    color: #ffffff;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+.aboutme h2 {
+    color: #D9080C;
+    text-align: center;
+}
+.aboutme .me{
+    color: #ffffff;
+}
+.aboutme h3 {
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.aboutme .description {
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: justify;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.info-grid {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 20px auto;
+    font-size: 15px;
+}
+
+.info-grid div {
+    flex: 2;
+    text-align: left;
+}
+
+.info-grid p {
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
