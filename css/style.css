@@ -340,6 +340,173 @@ p {
     color: #ffffff;
 }
 
+.skills{
+    background-color: #151592;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills h2{
+    color: #D9080C;
+    text-align: center;
+}
+.skills h3{
+    color: #ffffff;
+}
+.skills p{
+    font-size: 16px;
+}
+.skills .quote{
+    font-family: "Roboto",sans-serif;
+    color: #D9080C;
+    font-style: italic;
+    font-weight: bold;
+}
+.hardskills img{
+    width: 50px;
+    height: 50px;
+}
+
+.softskills img{
+    width: 145px;
+    padding-top: 10px;
+}
+
+
+.contact {
+    background: linear-gradient(100deg, #151592, #D9080C);
+    padding: 50px 0;
+    padding-bottom: -20px;
+    color: white;
+    text-align: center;
+}
+
+.contact .contactform {
+    max-width: 650px;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    color: black;
+}
+.contact h2{
+    color: #D9080C;
+    text-align: center;
+}
+
+.contact p{
+    padding-left: 70px;
+    padding-right: 70px;
+    color: #000000;
+    font-size: 15px;
+    opacity: 50%;
+}
+.contact form-label{
+    display: block;
+    text-align: left;
+}
+
+.btn{
+    background-color: #1a237e;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #D9080C;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .contact-card {
+        padding: 15px;
+    }
+
+    footer {
+        height: 60px;
+        line-height: 60px;
+        font-size: 14px;
+    }
+}
+
+/* Footer Styles */
+#footer {
+    background-color: #000046;
+    text-align: center;
+    border-radius: 50px;
+    width: 90%;
+    color: white;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Footer Row */
+.footer .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Footer Columns */
+.footer .col-md-3 {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+/* Typography */
+.footer p {
+    margin: 5px 0;
+    color: #fffefe;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer .name{
+    font-weight: normal;
+}
+.footer .mailid{
+    font-weight: normal;
+}
+.footer .number{
+    font-weight: normal;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.social-icons img {
+    width: 23px;
+    height: 23px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.footer a {
+    color: white;
+}
+
+
+
+
+
+
+
+
 
 
 

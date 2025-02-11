@@ -3,11 +3,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     navLinks.forEach(link => {
         link.addEventListener("click", function () {
-            // Remove 'active' class from all links
             navLinks.forEach(nav => nav.classList.remove("active"));
-
-            // Add 'active' class to the clicked link
             this.classList.add("active");
         });
     });
 });
+
+var text = " Thomars Thuvarangan | ";
+  var speed = 300; 
+  
+  function scrollTitle() {
+    document.title = text;
+    text = text.substring(1) + text.charAt(0);
+    setTimeout(scrollTitle, speed);
+  }
+
+  scrollTitle();
