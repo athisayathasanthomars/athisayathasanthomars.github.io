@@ -441,7 +441,6 @@ p {
     padding: 70px 0;
     padding-bottom: 8px;
     color: white;
-    text-align: center;
 }
 
 .contact .contactform {
@@ -455,6 +454,10 @@ p {
     color: black;
     text-align: left;
     font-weight: 600;
+}
+.contactform .btn{
+    display: block; 
+    margin: 0 auto;
 }
 .contact h2{
     color: #D9080C;
