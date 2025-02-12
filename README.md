@@ -35,5 +35,5 @@ This is a personal portfolio website designed to showcase my projects, skills, a
 git clone https://github.com/athisayathasanthomars/athisayathasanthomars.github.io
 
 3. To Check Live Demo:
-https://athisayathasanthomars.github.io/
+https://athisayathasanthomars.github.io
 
