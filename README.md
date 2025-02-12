@@ -10,7 +10,7 @@ This is a personal portfolio website designed to showcase my projects, skills, a
 - **Home Section** – Highlights my passion, who I'm.
 - **About Me Section** – Highlights my personal info.
 - **Background** – Displays my education and experience breifly. 
-- **Project Showcase** – Displays portfolio projects with descriptions and links.
+- **Project Showcase** – Displays different fields projects such as ML,Analysis,S.Development with descriptions and links.
 - **Contact Form** – Allows visitors to send messages.
 - **Smooth Animations** – Enhances user experience with interactive elements.
 - **Footer** – Gives link to my other social media channels and contact details.
