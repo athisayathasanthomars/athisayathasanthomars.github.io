@@ -535,7 +535,7 @@ p {
     padding-bottom: 8px;
     overflow: hidden;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 
 .contact::before {    
