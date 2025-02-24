@@ -533,7 +533,40 @@ p {
     background: linear-gradient(100deg, #151592, #D9080C);
     padding: 70px 0;
     padding-bottom: 8px;
-    color: white;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.contact::before {    
+    content: "";
+    position: absolute;
+    top: 240px;
+    left: -325px;
+    width: 50%;
+    height: 100%;
+    background: url('../img/bgbottomh.png') no-repeat right center;
+    background-size: contain;
+    background-size: 110% auto;
+    opacity: 0.6;
+    z-index: -1;
+    transform: rotate(-15deg);
+}
+
+/* Right Image */
+.contact::after {
+    content: "";
+    position: absolute;
+    top: -345px;
+    right: -424px;
+    width: 50%;
+    height: 100%;
+    background: url('../img/bgbottomsquare.png') no-repeat right center;
+    background-size: contain;
+    background-size: 110% auto;
+    opacity: 0.6;
+    z-index: -1;
+    transform: rotate(170deg);
 }
 
 .contact .contactform {
@@ -592,6 +625,14 @@ p {
         height: 222px;
         line-height: 10px;
         font-size: 10px;
+    }
+    .contact::before {    
+        background-image: none;
+    }
+    
+    /* Right Image */
+    .contact::after {
+        background-image: none;
     }
 }
 
