@@ -6,11 +6,57 @@ body{
     padding: 0;
     width: 100%;
     overflow-x: hidden;
+    z-index: 1;
 }
-header{
+
+header {
     padding-top: 60px;
-    background: linear-gradient(100deg,#151592, #D9080C);
+    background: linear-gradient(100deg, #151592, #D9080C);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
+
+/* Left Image */
+header::before {
+    content: "";
+    position: absolute;
+    top:350px;
+    left: -450px;
+    width: 50%;
+    height: 100%;
+    background: url('../img/bgsquare.png') no-repeat left center;
+    background-size: contain;
+    background-size: 100% auto;
+    opacity:1;
+    z-index: -1;
+    transform: rotate(-10deg);
+}
+
+/* Right Image */
+header::after {
+    content: "";
+    position: absolute;
+    top: -360px;
+    right: -340px;
+    width: 50%;
+    height: 100%;
+    background: url('../img/bgh.png') no-repeat right center;
+    background-size: contain;
+    background-size: 110% auto;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    header::before {
+        background-image: none;
+    }
+    header::after {
+        background-image: none;
+    }
+}
+
 .navbar-brand,
 .text-primary {
     font-family: "Bonheur Royale", serif;
@@ -246,11 +292,14 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .fixed-img {
     width: 80px;
     height: 80px;
+    z-index: 2;
+    animation: pulseGlow 2s infinite alternate;
 }
 
 .timeline-content {
@@ -320,6 +369,28 @@ p {
     }
 }
 
+.timeline-icon::before {
+    content: "";
+    position: absolute;
+    width: 87px;
+    height:87px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #151592 0%,     /* Red */
+        #151592 25%,    /* Lighter Red */
+        #F28B87 50%,    /* Soft Red */
+        #FAD2D1 75%,    /* Very Light Red */
+        #FFFFFF 100%     /* Ending in the same bright red */
+    );
+    filter: blur(2px);
+    animation: glowRotate 2s linear infinite;
+    z-index: 1;
+}
+
+@keyframes glowRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 
 
 .projects{
